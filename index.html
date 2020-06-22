@@ -8,13 +8,9 @@
 
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/header.css">
-
-        <script>
-            window.setTimeout(function() { document.getElementById("content").style.visibility = "visible" }, 0);
-        </script>
     </head>
     <body id="content" style="visibility: hidden;">
-        <div class="header">
+        <div class="header" id="header">
             <button class="header_button" style="margin: 15px 0px 15px 15px;">Hi there</button>
             <button class="header_button">Hi there</button>
             <button class="header_button">Hi there</button>
@@ -29,5 +25,9 @@
             <br>
             <button class="header_button">Hi there</button>
         </div>
+        <script>
+            window.setTimeout(function() { document.getElementById("content").style.visibility = "visible" }, 0);
+            document.getElementById("header").style.backgroundImage = "url(media/background" + (Math.round(Math.random() * 7) + 1) + ".jpg)";
+        </script>
     </body>
 </html>
