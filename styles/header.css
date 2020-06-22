@@ -1,0 +1,31 @@
+.header {
+    background-image: url("../media/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    opacity: 0.6;
+    position: relative;
+}
+
+.header_button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 0px 0px 15px 15px;
+    outline: none;
+    padding: 15px 15px;
+    transition-duration: 0.3s;
+}
+
+.header_button:hover {
+    background-color: #000000;
+}
+
+.header_button:active {
+    transform: translateY(-2px);
+}
