@@ -4,30 +4,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Hello</title>
-        <link rel="shortcut icon" href="icon.png" type="image/png">
+        <link rel="shortcut icon" href="/icon.png" type="image/png">
 
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/header.css">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/header.css">
     </head>
     <body id="content" style="visibility: hidden;">
         <div class="header" id="header">
-            <button class="header_button" style="margin: 15px 0px 15px 15px;">Hi there</button>
-            <button class="header_button">Hi there</button>
-            <button class="header_button">Hi there</button>
+            <button class="header_button" style="margin: 15px 0px 15px 15px;" onclick="window.location.href='404.html';">Hi there</button>
             <br>
-            <button class="header_button">Hi there</button>
-            <button class="header_button">Hi there</button>
-            <br>
-            <button class="header_button">Hi there</button>
-            <br>
-            <button class="header_button">Hi there</button>
-            <button class="header_button">Hi there</button>
-            <br>
-            <button class="header_button">Hi there</button>
+            <button class="header_button" onclick="window.location.href='weather.html';">Weather</button>
         </div>
+        <!-- <canvas id="canvas" width="128" height="128"></canvas> -->
+
+        <!-- Scripts -->
         <script>
             window.setTimeout(function() { document.getElementById("content").style.visibility = "visible" }, 0);
-            document.getElementById("header").style.backgroundImage = "url(media/background" + (Math.round(Math.random() * 7) + 1) + ".jpg)";
+            document.getElementById("header").style.backgroundImage = "url(/media/background" + (Math.round(Math.random() * 7) + 1) + ".jpg)";
         </script>
+        <!-- <script src="/scripts/canvas.js"></script> -->
     </body>
 </html>
