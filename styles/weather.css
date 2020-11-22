@@ -1,0 +1,16 @@
+.weather_map_container {
+    font-size: 0;
+    background-color: #BDF5F5;
+}
+
+.weather_map {
+    position: relative;
+}
+
+/* .weather_map_glass {
+    position: absolute;
+    border: 3px solid #000;
+    cursor: none;
+    width: 100px;
+    height: 100px;   
+} */

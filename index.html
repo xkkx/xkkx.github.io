@@ -2,27 +2,22 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <title>Hello</title>
         <link rel="shortcut icon" href="/icon.png" type="image/png">
 
-        <!-- Stylesheets -->
         <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/background.css">
         <link rel="stylesheet" href="/styles/header.css">
     </head>
-    <body id="content" style="visibility: hidden;">
-        <div class="header" id="header">
+    <body id="body" style="visibility: hidden;" onload="load()" onresize="resetHeader()">
+        <div class="background header" id="header_background"></div>
+        <div class="content" id="header_content">
             <button class="header_button" style="margin: 15px 0px 15px 15px;" onclick="window.location.href='/404.html';">Hi there</button>
             <br>
-            <button class="header_button" onclick="window.location.href='/pages/weather.html';">Weather</button>
+            <button class="header_button" onclick="window.location.href='/weather.html';">Weather</button>
         </div>
-        <!-- <canvas id="canvas" width="128" height="128"></canvas> -->
 
-        <!-- Scripts -->
-        <script>
-            window.setTimeout(function() { document.getElementById("content").style.visibility = "visible" }, 0);
-            document.getElementById("header").style.backgroundImage = "url(/media/background" + (Math.round(Math.random() * 7) + 1) + ".jpg)";
-        </script>
-        <!-- <script src="/scripts/canvas.js"></script> -->
+        <script src="/scripts/index.js"></script>
     </body>
 </html>
