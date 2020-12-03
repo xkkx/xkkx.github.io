@@ -13,10 +13,10 @@ function retraceMap() {
     for (let i = 0; i < mapZoom - 1; i++) {
         coords = coords["next"][path[i]];
     }
-    document.getElementById("map0").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][0] + "/" + coords["y"][0] + ".png?appid=27ef105f4713a26b4ace6bdbd8a43384";
-    document.getElementById("map1").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][1] + "/" + coords["y"][1] + ".png?appid=27ef105f4713a26b4ace6bdbd8a43384";
-    document.getElementById("map2").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][2] + "/" + coords["y"][2] + ".png?appid=27ef105f4713a26b4ace6bdbd8a43384";
-    document.getElementById("map3").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][3] + "/" + coords["y"][3] + ".png?appid=27ef105f4713a26b4ace6bdbd8a43384";
+    document.getElementById("map0").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][0] + "/" + coords["y"][0] + ".png?appid=TOKEN";
+    document.getElementById("map1").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][1] + "/" + coords["y"][1] + ".png?appid=TOKEN";
+    document.getElementById("map2").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][2] + "/" + coords["y"][2] + ".png?appid=TOKEN";
+    document.getElementById("map3").src = "https://tile.openweathermap.org/map/precipitation_new/" + mapZoom + "/" + coords["x"][3] + "/" + coords["y"][3] + ".png?appid=TOKEN";
 }
 
 function zoomInMap(id) {
@@ -43,10 +43,10 @@ function zoomOutMap() {
 //     navigator.geolocation.getCurrentPosition(loadWeather);
 // }
 // async function loadWeather(position) {
-//     // "api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=27ef105f4713a26b4ace6bdbd8a43384"
+//     // "api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=TOKEN"
 //     const lat = position.coords.latitude;
 //     const lon = position.coords.longitude;
-//     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=27ef105f4713a26b4ace6bdbd8a43384&lang=ru");
+//     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=TOKEN&lang=ru");
 //     const json = await response.json()
 //     console.log(json);
 // }
