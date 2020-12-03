@@ -1,11 +1,5 @@
 .header {
-    background-image: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: fit-content;
     opacity: 0.6;
-    position: relative;
 }
 
 .header_button {
